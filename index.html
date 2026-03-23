@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jowan Joe Mathew | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Jowan Joe Mathew, Software Developer and AI Enthusiast.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Poppins for headings & Inter for body for a modern tech feel -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#home" class="nav-logo">Jowan<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <i class='bx bx-sun'></i>
+            </button>
+            <div class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="close-menu" id="close-menu"><i class='bx bx-x'></i></div>
+        <ul class="mobile-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="hero-container container">
+            <div class="hero-text fade-in-left">
+                <span class="greeting">Hello, I am</span>
+                <h1 class="name">Jowan Joe <span>Mathew</span></h1>
+                <h2 class="role">I'm a <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="tagline">Building intelligent solutions and scalable digital products.</p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/jowxn" target="_blank" aria-label="GitHub"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/jowann" target="_blank" aria-label="LinkedIn"><i
+                            class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-right">
+                <div class="profile-card">
+                    <div class="glow-ring"></div>
+                    <div class="profile-img-placeholder">
+                        <img src="profile.jpg" alt="Jowan Joe Mathew">
+                    </div>
+                    <div class="floating-badge badge-1"><i class='bx bx-code-alt'></i></div>
+                    <div class="floating-badge badge-2"><i class='bx bx-brain'></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class='bx bx-chevron-down'></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h2>About <span>Me</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-content fade-in-up">
+                <div class="about-text glass-card">
+                    <h3>Software Developer & AI Enthusiast</h3>
+                    <p>
+                        I am a passionate software developer currently pursuing my B.Tech in Computer Science and
+                        Engineering at Lovely Professional University. I specialize in building intelligent applications
+                        and robust backend systems, blending my deep interest in Artificial Intelligence with scalable
+                        software architecture.
+                    </p>
+                    <p>
+                        My ambition is to create digital products that solve real-world problems. Whether it is
+                        engineering high-performance AI agents or developing full-stack web platforms, I focus on
+                        delivering seamless, modern experiences.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class='bx bx-bulb'></i>
+                            <div>
+                                <h4>Innovation</h4>
+                                <span>AI Models & Solutions</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class='bx bx-rocket'></i>
+                            <div>
+                                <h4>Ambition</h4>
+                                <span>Tech Entrepreneurship</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h2>Technical <span>Skills</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-category glass-card fade-in-up" data-delay="100">
+                    <div class="category-header">
+                        <i class='bx bx-code-block'></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-info"><span>C++ / C</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>Python</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>JavaScript / Java</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>SQL</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Web Dev -->
+                <div class="skill-category glass-card fade-in-up" data-delay="200">
+                    <div class="category-header">
+                        <i class='bx bx-window-alt'></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5 & CSS3</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Streamlit</span>
+                    </div>
+                </div>
+
+                <!-- AI / ML -->
+                <div class="skill-category glass-card fade-in-up" data-delay="300">
+                    <div class="category-header">
+                        <i class='bx bx-brain'></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Transformers (HF)</span>
+                        <span class="tag">OpenAI API</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Soft Skills -->
+                <div class="skill-category glass-card fade-in-up" data-delay="400">
+                    <div class="category-header">
+                        <i class='bx bx-wrench'></i>
+                        <h3>Tools & Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Git & VS Code</span>
+                        <span class="tag">MySQL & Render</span>
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h2>Featured <span>Projects</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card glass-card fade-in-up" data-delay="100">
+                    <div class="project-content">
+                        <h3>AI Therapist (Gen Z)</h3>
+                        <p class="project-date">Sep 2025 - Nov 2025</p>
+                        <p class="project-desc">
+                            High-performance voice agent leveraging Groq LPU to achieve &lt;500ms latency for Llama 3
+                            inference. Implemented an Android Native interface with real-time lip-sync animations and a
+                            FastAPI backend with continuous memory.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Android</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Groq LPU</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class='bx bxl-github'></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card fade-in-up" data-delay="200">
+                    <div class="project-content">
+                        <h3>AI Mock Interviewer</h3>
+                        <p class="project-date">Sep 2024 - Nov 2024</p>
+                        <p class="project-desc">
+                            An AI-powered mock interview system using Ollama for local LLMs, and real-time response
+                            evaluation. Integrated a Streamlit frontend with a FastAPI backend to create a complete
+                            web-accessible realistic interview platform.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Streamlit</span>
+                            <span>FastAPI</span>
+                            <span>Ollama</span>
+                            <span>NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class='bx bxl-github'></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h2>Training & <span>Certifications</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Summer Training -->
+                <div class="project-card glass-card fade-in-up" data-delay="100">
+                    <div class="project-content">
+                        <h3>AI-Powered NLP Engine <br><small>(Summer Training)</small></h3>
+                        <p class="project-date">Jun 2025 - Aug 2025</p>
+                        <p class="project-desc">
+                            Hands-on implementation of NLP mini-projects including sentiment analysis, text
+                            classification, and chatbot-style text generation using Transformers. Built with attention
+                            mechanisms.
+                        </p>
+                        <div class="tech-stack">
+                            <span>NLP</span>
+                            <span>HuggingFace</span>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1RwCmigdQoagzvW8PZPKwJax5gwLBc36M/view"
+                                target="_blank" class="btn-small"><i class='bx bx-link-external'></i> View
+                                Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 1 -->
+                <div class="project-card glass-card fade-in-up" data-delay="200">
+                    <div class="project-content">
+                        <h3>ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM</h3>
+                        <p class="project-date">Aug 2025</p>
+                        <p class="project-desc">
+                            Mastered advanced prompt frameworks to optimize outputs from ChatGPT-4 and other LLMs,
+                            enabling the rapid development of intelligent AI-driven applications and complex logic
+                            generation.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Infosys</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1V4Tj48X9X0N-UuFhFAGlKWkaepuWQ7xW/view"
+                                target="_blank" class="btn-small"><i class='bx bx-link-external'></i> View
+                                Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="project-card glass-card fade-in-up" data-delay="300">
+                    <div class="project-content">
+                        <h3>Master Generative AI and AI Tools</h3>
+                        <p class="project-date">2024</p>
+                        <p class="project-desc">
+                            Explored the expansive landscape of Generative AI platforms. Developed a strong proficiency
+                            in integrating various AI solutions into workflows to automate processes and boost
+                            productivity.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Udemy</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1rXE1_Z-pGuYutDW9Oj1gdvwaSNsuTSwt/view"
+                                target="_blank" class="btn-small"><i class='bx bx-link-external'></i> View
+                                Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="project-card glass-card fade-in-up" data-delay="400">
+                    <div class="project-content">
+                        <h3>Build Generative AI Apps with No-Code Tools</h3>
+                        <p class="project-date">2024</p>
+                        <p class="project-desc">
+                            Gained practical experience designing and rapidly deploying functional AI-powered web
+                            applications and intelligent solutions utilizing leading no-code deployment platforms.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Udemy</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1Qxxtvdv5CY7mPd-gv5n4efo_NNmxVJZE/view"
+                                target="_blank" class="btn-small"><i class='bx bx-link-external'></i> View
+                                Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="project-card glass-card fade-in-up" data-delay="500">
+                    <div class="project-content">
+                        <h3>ChatGPT Made Easy: AI Essentials For Beginners</h3>
+                        <p class="project-date">2024</p>
+                        <p class="project-desc">
+                            Established a robust foundation in artificial intelligence essentials, focusing on effective
+                            interaction models and fundamental applications of ChatGPT in everyday problem-solving.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Udemy</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1Jjp8p6jXiNiCZArrCNrQC6jyzDZXYy4e/view"
+                                target="_blank" class="btn-small"><i class='bx bx-link-external'></i> View
+                                Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Learning Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h2>My <span>Journey</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Education -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Aug 2023 - May 2027</span>
+                        <h3>Bachelor of Technology - CSE</h3>
+                        <h4>Lovely Professional University</h4>
+                        <p>CGPA: 7.51. Focusing on deep learning architectures, software engineering, and algorithmic
+                            fundamentals.</p>
+                    </div>
+                </div>
+
+                <!-- Training & Certifications -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Summer 2025</span>
+                        <h3>Training & Certifications</h3>
+                        <h4>Various Platforms</h4>
+                        <p>Completed AI-Powered NLP Summer Training, Generative AI & LLM Mastery, and three other
+                            specialized certifications.</p>
+                    </div>
+                </div>
+
+                <!-- Event Coordinator -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">June 2024 - Aug 2024</span>
+                        <h3>Event Coordinator</h3>
+                        <h4>Spark</h4>
+                        <p>Led planning and execution of multiple awareness events, managing logistics and operations
+                            successfully.</p>
+                    </div>
+                </div>
+
+                <!-- Volunteer Experience -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">June 2024 - Aug 2024</span>
+                        <h3>Volunteer</h3>
+                        <h4>Vikas Bhavan Special School</h4>
+                        <p>Provided academic mentorship and structured literacy campaigns to support underprivileged
+                            students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h2>Get In <span>Touch</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-content fade-in-up">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <p>Open for opportunities and thrilling collaborations.</p>
+
+                    <div class="info-item">
+                        <i class='bx bx-envelope'></i>
+                        <a href="mailto:jowanjoejj.04@gmail.com">jowanjoejj.04@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bx-phone'></i>
+                        <a href="tel:+919048717795">+91 9048717795</a>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bx-current-location'></i>
+                        <span>India</span>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://github.com/jowxn" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/jowann" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message</span>
+                        <i class='bx bx-send'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Jowan Joe Mathew. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
